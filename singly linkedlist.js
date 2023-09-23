@@ -15,6 +15,16 @@ class singlelinked{
             this.length=1;
         }
     }
+    print(){
+        if(this.head==null){
+            console.log('empty list');
+        }
+        let current=this.head;
+        while(current!=null){
+            console.log(current.value);
+            current=current.next;
+        }
+    }
     insertatbegin(value){
         let newnode=new node(value);
         if(this.head==null){
@@ -55,16 +65,7 @@ class singlelinked{
         this.length++;
         return this;
     }
-    print(){
-        if(this.head==null){
-            console.log('empty list');
-        }
-        let current=this.head;
-        while(current!=null){
-            console.log(current.value);
-            current=current.next;
-        }
-    }
+ 
     deleteatbegin(){
        if(this.head==null){
         return head;
@@ -154,17 +155,17 @@ class singlelinked{
 let newnode=new node(10);
 let obj=new singlelinked(newnode);
 obj.insertatbegin(20).insertatbegin(30).insertatbegin(40).insertatbegin(70).insertatbegin(80);
-obj.append(50).append(60).insertat(25,2);
-obj.deleteatbegin();
-obj.deleteatlast();
-obj.deleteatindex(2);
+// obj.append(50).append(60).insertat(25,2);
+// obj.deleteatbegin();
+// obj.deleteatlast();
+// obj.deleteatindex(2);
 // obj.deletenodebyval(10);
 // obj.reverse();
 obj.print();
-console.log(obj.gethead());
-console.log(obj.getlast());
-console.log(obj.getsize());
-console.log(obj.search(10));
-console.log(obj.search(15));
-obj.reverse();
-obj.print();
+// console.log(obj.gethead());
+// console.log(obj.getlast());
+// console.log(obj.getsize());
+// console.log(obj.search(10));
+// console.log(obj.search(15));
+// obj.reverse();
+// obj.print();

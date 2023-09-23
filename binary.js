@@ -13,6 +13,8 @@ function binary(arr,element){
             low=mid+1;
         }
     }
+
+    return -1;
 }
 let arr1=[10,20,30,40,50];
-console.log(binary(arr1,40))
+console.log(binary(arr1,70))

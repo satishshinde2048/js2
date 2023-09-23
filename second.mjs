@@ -1,5 +1,5 @@
 export{index as mat}; 
-function index(){
+ function index(){
     console.log('called from indexsecond')
 }
 export function second(){
